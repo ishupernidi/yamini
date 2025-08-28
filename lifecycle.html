@@ -1,0 +1,147 @@
+
+<!doctype html>  
+<html lang="en">  
+<head>  
+  <meta charset="utf-8" />  
+  <meta name="viewport" content="width=device-width,initial-scale=1" />  
+  <title>DevOps Lifecycle Diagram (No CSS)</title>  
+</head>  
+<body>  
+  <div>  
+    <header>  
+      <div style="display:inline-block;width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,#4f46e5,#06b6d4);color:white;font-weight:700;text-align:center;line-height:48px;margin-right:12px;">  
+        Devops
+      </div>  
+      <div style="display:inline-block;vertical-align:top;">  
+        <h1 style="margin:0;font-size:20px;">DevOps Lifecycle — Visual Explanation</h1>  
+        <p style="margin:4px 0;color:#6b7280;font-size:14px;">A circular pipeline showing the key stages: Plan → Develop → Build → Test → Release → Deploy → Operate → Monitor</p>  
+      </div>  
+    </header>  
+
+    <main>  
+      <div style="border-radius:12px;padding:18px;border:1px solid rgba(0,0,0,0.07);background:#0f1724;color:#e6eef8;max-width:1100px;margin-top:16px;">  
+        <div style="display:flex;gap:18px;flex-wrap:wrap;">  
+          <div style="flex:1 1 640px;min-width:280px;display:flex;justify-content:center;align-items:center;padding:18px;">  
+            <!-- SVG circular pipeline -->  
+            <svg viewBox="0 0 900 600" role="img" aria-label="DevOps lifecycle diagram" style="max-width:700px;width:100%;height:auto;">  
+              <defs>  
+                <linearGradient id="g1" x1="0" x2="1">  
+                  <stop offset="0" stop-color="#4f46e5"/>  
+                  <stop offset="1" stop-color="#06b6d4"/>  
+                </linearGradient>  
+                <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">  
+                  <path d="M 0 0 L 10 5 L 0 10 z" fill="#6d28d9"/>  
+                </marker>  
+              </defs>  
+
+              <!-- faint background ring -->  
+              <g transform="translate(450,300)">  
+                <path d="M0,-200 A200,200 0 1,1 -141.42,-141.42" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="24"/>  
+              </g>  
+
+              <!-- Stage: Plan -->  
+              <g transform="translate(450,60)">  
+                <rect x="-78" y="-28" width="156" height="56" rx="10" ry="10" fill="url(#g1)" opacity="0.12" />  
+                <rect x="-78" y="-28" width="156" height="56" rx="10" fill="none" stroke="url(#g1)" stroke-width="2" />  
+                <text x="0" y="-2" text-anchor="middle" fill="#e6eef8" font-family="Arial,Helvetica,sans-serif" font-size="12px" font-weight="700">Plan</text>  
+                <text x="0" y="16" text-anchor="middle" fill="#9fb0d3" font-family="Arial,Helvetica,sans-serif" font-size="11px">requirements & roadmap</text>  
+              </g>  
+
+              <!-- Develop -->  
+              <g transform="translate(690,170)">  
+                <rect x="-78" y="-28" width="156" height="56" rx="10" fill="rgba(79,70,229,0.1)" />  
+                <rect x="-78" y="-28" width="156" height="56" rx="10" fill="none" stroke="url(#g1)" stroke-width="2" />  
+                <text x="0" y="-2" text-anchor="middle" fill="#e6eef8" font-family="Arial,Helvetica,sans-serif" font-size="12px">Develop</text>  
+                <text x="0" y="16" text-anchor="middle" fill="#9fb0d3" font-family="Arial,Helvetica,sans-serif" font-size="11px">coding & version control</text>  
+              </g>  
+
+              <!-- Build -->  
+              <g transform="translate(760,360)">  
+                <rect x="-78" y="-28" width="156" height="56" rx="10" fill="rgba(6,182,212,0.06)" />  
+                <rect x="-78" y="-28" width="156" height="56" rx="10" fill="none" stroke="url(#g1)" stroke-width="2" />  
+                <text x="0" y="-2" text-anchor="middle" fill="#e6eef8" font-family="Arial,Helvetica,sans-serif" font-size="12px">Build</text>  
+                <text x="0" y="16" text-anchor="middle" fill="#9fb0d3" font-family="Arial,Helvetica,sans-serif" font-size="11px">CI: compile & package</text>  
+              </g>  
+
+              <!-- Test -->  
+              <g transform="translate(590,500)">  
+                <rect x="-78" y="-28" width="156" height="56" rx="10" fill="rgba(79,70,229,0.07)" />  
+                <rect x="-78" y="-28" width="156" height="56" rx="10" fill="none" stroke="url(#g1)" stroke-width="2" />  
+                <text x="0" y="-2" text-anchor="middle" fill="#e6eef8" font-family="Arial,Helvetica,sans-serif" font-size="12px">Test</text>  
+                <text x="0" y="16" text-anchor="middle" fill="#9fb0d3" font-family="Arial,Helvetica,sans-serif" font-size="11px">automated & manual QA</text>  
+              </g>  
+
+              <!-- Release -->  
+              <g transform="translate(310,500)">  
+                <rect x="-78" y="-28" width="156" height="56" rx="10" fill="rgba(79,70,229,0.06)" />  
+                <rect x="-78" y="-28" width="156" height="56" rx="10" fill="none" stroke="url(#g1)" stroke-width="2" />  
+                <text x="0" y="-2" text-anchor="middle" fill="#e6eef8" font-family="Arial,Helvetica,sans-serif" font-size="12px">Release</text>  
+                <text x="0" y="16" text-anchor="middle" fill="#9fb0d3" font-family="Arial,Helvetica,sans-serif" font-size="11px">artifact & versioning</text>  
+              </g>  
+
+              <!-- Deploy -->  
+              <g transform="translate(140,360)">  
+                <rect x="-78" y="-28" width="156" height="56" rx="10" fill="rgba(6,182,212,0.06)" />  
+                <rect x="-78" y="-28" width="156" height="56" rx="10" fill="none" stroke="url(#g1)" stroke-width="2" />  
+                <text x="0" y="-2" text-anchor="middle" fill="#e6eef8" font-family="Arial,Helvetica,sans-serif" font-size="12px">Deploy</text>  
+                <text x="0" y="16" text-anchor="middle" fill="#9fb0d3" font-family="Arial,Helvetica,sans-serif" font-size="11px">release to environments</text>  
+              </g>  
+
+              <!-- Operate -->  
+              <g transform="translate(60,170)">  
+                <rect x="-78" y="-28" width="156" height="56" rx="10" fill="rgba(79,70,229,0.06)" />  
+                <rect x="-78" y="-28" width="156" height="56" rx="10" fill="none" stroke="url(#g1)" stroke-width="2" />  
+                <text x="0" y="-2" text-anchor="middle" fill="#e6eef8" font-family="Arial,Helvetica,sans-serif" font-size="12px">Operate</text>  
+                <text x="0" y="16" text-anchor="middle" fill="#9fb0d3" font-family="Arial,Helvetica,sans-serif" font-size="11px">run & maintain systems</text>  
+              </g>  
+
+              <!-- Monitor -->  
+              <g transform="translate(230,80)">  
+                <rect x="-78" y="-28" width="156" height="56" rx="10" fill="rgba(6,182,212,0.06)" />  
+                <rect x="-78" y="-28" width="156" height="56" rx="10" fill="none" stroke="url(#g1)" stroke-width="2" />  
+                <text x="0" y="-2" text-anchor="middle" fill="#e6eef8" font-family="Arial,Helvetica,sans-serif" font-size="12px">Monitor</text>  
+                <text x="0" y="16" text-anchor="middle" fill="#9fb0d3" font-family="Arial,Helvetica,sans-serif" font-size="11px">observability & alerts</text>  
+              </g>  
+
+              <!-- Curved arrows connecting stages -->  
+              <g stroke="rgba(99,102,241,0.9)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">  
+                <path d="M450,100 C540,110 620,140 670,170" marker-end="url(#arr)"/>  
+                <path d="M730,220 C740,260 750,295 760,340" marker-end="url(#arr)"/>  
+                <path d="M700,420 C660,455 640,480 600,500" marker-end="url(#arr)"/>  
+                <path d="M540,520 C470,520 390,520 330,500" marker-end="url(#arr)"/>  
+                <path d="M250,500 C200,480 180,440 170,400" marker-end="url(#arr)"/>  
+                <path d="M120,360 C100,300 90,240 80,200" marker-end="url(#arr)"/>  
+                <path d="M100,160 C140,120 180,100 230,90" marker-end="url(#arr)"/>  
+                <path d="M300,70 C350,40 400,50 430,60" marker-end="url(#arr)"/>  
+              </g>  
+
+              <!-- center info -->  
+              <g transform="translate(450,300)">  
+                <circle r="78" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.03)" />  
+                <text x="0" y="-6" text-anchor="middle" fill="#e6eef8" font-family="Arial,Helvetica,sans-serif" font-size="14px" font-weight="600">DevOps</text>  
+                <text x="0" y="14" text-anchor="middle" fill="#9fb0d3" font-family="Arial,Helvetica,sans-serif" font-size="11px">continuous collaboration & feedback</text>  
+              </g>  
+            </svg>  
+          </div>  
+
+          <aside style="width:300px;min-width:220px;padding:16px;background:#071022;border-radius:8px;color:#9fb0d3;">  
+            <h3 style="margin:0 0 8px 0;font-size:16px;color:#e6eef8;">Legend & Quick Notes</h3>  
+            <ul style="list-style:none;padding:0;margin:0;color:#9fb0d3;font-size:14px;">  
+              <li style="margin-bottom:8px;"><span style="display:inline-block;width:14px;height:14px;border-radius:4px;background:linear-gradient(135deg,#4f46e5,#06b6d4);margin-right:8px;vertical-align:middle;"></span><strong style="color:#e6eef8;">Plan</strong> — define scope, roadmap, backlog</li>  
+              <li style="margin-bottom:8px;"><span style="display:inline-block;width:14px;height:14px;border-radius:4px;background:#4f46e5;margin-right:8px;vertical-align:middle;"></span><strong style="color:#e6eef8;">Develop</strong> — source control, feature branches, code review</li>  
+              <li style="margin-bottom:8px;"><span style="display:inline-block;width:14px;height:14px;border-radius:4px;background:#06b6d4;margin-right:8px;vertical-align:middle;"></span><strong style="color:#e6eef8;">Build</strong> — CI pipelines, artifact creation</li>  
+              <li style="margin-bottom:8px;"><span style="display:inline-block;width:14px;height:14px;border-radius:4px;background:#7c3aed;margin-right:8px;vertical-align:middle;"></span><strong style="color:#e6eef8;">Test</strong> — unit, integration, e2e, security tests</li>  
+              <li style="margin-bottom:8px;"><span style="display:inline-block;width:14px;height:14px;border-radius:4px;background:#22c55e;margin-right:8px;vertical-align:middle;"></span><strong style="color:#e6eef8;">Release</strong> — versioning & release gating</li>  
+              <li style="margin-bottom:8px;"><span style="display:inline-block;width:14px;height:14px;border-radius:4px;background:#06b6d4;margin-right:8px;vertical-align:middle;"></span><strong style="color:#e6eef8;">Deploy</strong> — rollout strategies (canary, blue/green)</li>  
+              <li style="margin-bottom:8px;"><span style="display:inline-block;width:14px;height:14px;border-radius:4px;background:#fb923c;margin-right:8px;vertical-align:middle;"></span><strong style="color:#e6eef8;">Operate</strong> — infrastructure, config, runbooks</li>  
+              <li style="margin-bottom:8px;"><span style="display:inline-block;width:14px;height:14px;border-radius:4px;background:#ef4444;margin-right:8px;vertical-align:middle;"></span><strong style="color:#e6eef8;">Monitor</strong> — metrics, logs, traces, alerts</li>  
+            </ul>  
+
+            <div style="margin-top:12px;font-size:13px;color:#9fb0d3;">  
+              Tip: The arrows indicate continuous flow and feedback loops. In practice, CI/CD pipelines automate Build→Test→Release→Deploy; monitoring and feedback influence Planning and Development.  
+            </div>  
+          </aside>  
+        </div>  
+
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px;">  
+          <div style="padding:10px;background:#071022;border-radius:8px;color:#e6eef8;"><strong>Plan</strong><div style
